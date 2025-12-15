@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Wren Rider — The Shatered Sigil</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body { font-family:"Inter",sans-serif; margin:0; background:#fafafa; color:#1a1a1a; line-height:1.6; }
+.container { max-width:1100px; margin:0 auto; padding:20px; }
+h1,h2,h3 { font-family:"Merriweather",serif; color:#145a5a; }
+a { color:#2f8a89; text-decoration:none; }
+header { margin-bottom:20px; }
+.series-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:20px; }
+.book-card { background:#fff; border-radius:12px; padding:16px; box-shadow:0 6px 18px rgba(0,0,0,.08); display:flex; flex-direction:column; }
+.book-cover { width:100%; border-radius:10px; margin-bottom:12px; box-shadow:0 4px 12px rgba(0,0,0,.1); }
+.book-card h3 { margin:8px 0; font-size:1.2rem; }
+.book-card p { font-size:0.95rem; color:#333; flex-grow:1; }
+.btn { display:inline-block; padding:8px 14px; border-radius:8px; font-weight:600; margin-top:10px; text-align:center; }
+.btn-primary { background:#2f8a89; color:white; }
+.btn-disabled { background:#ccc; color:#666; cursor:not-allowed; }
+footer { margin-top:40px; padding:20px 0; font-size:0.9rem; color:#555; border-top:1px solid #eee; text-align:center; }
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+  <a href="index.html">← Back to Home</a>
+</header>
+
+<h1>[Series Title]</h1>
+<p>A five-book journey that explores themes of resilience, memory, and transformation. Each installment builds on the last, weaving an unforgettable narrative readers will follow to the very end.</p>
+
+<div class="series-grid">
+  <!-- Book 1 -->
+  <div class="book-card">
+    <img src="C:\Users\reckl\OneDrive\Desktop\Projects\Wren Rider\Website\images\The Sigil Broken Cover.png" alt="Book 1 Cover" class="book-cover">
+    <h3>Book One: The Sigil Broken</h3>
+    <p>After the Sigil's destruction, magic destabilizes and spreads chaos. Kaelen Veyr, an orphan unknowingly marked by the Sigil, is forced to flee Ferrenhold and joins a group of strangers each tied to fragments of the past. Their flight uncovers a plot that could destroy what's left of the Realms.</p>
+    <a href="#" class="btn btn-primary">Buy on Amazon</a>
+  </div>
+
+  <!-- Book 2 -->
+  <div class="book-card">
+    <img src="C:\Users\reckl\OneDrive\Desktop\Projects\Wren Rider\Website\images\The Realm Severed Cover.png" alt="Book 2 Cover" class="book-cover">
+    <h3>Book Two: The Realm Severed</h3>
+    <p>This installment continues the journey. Release date coming soon.</p>
+    <span class="btn btn-disabled">Not Yet Released</span>
+  </div>
+
+  <!-- Book 3 -->
+  <div class="book-card">
+    <img src="C:\Users\reckl\OneDrive\Desktop\Projects\Wren Rider\Website\images\The Crown of Ruin Cover.png" alt="Book 3 Cover" class="book-cover">
+    <h3>Book Three: The Crown of Ruin</h3>
+    <p>Placeholder blurb for Book Three in the series.</p>
+    <span class="btn btn-disabled">Not Yet Released</span>
+  </div>
+
+  <!-- Book 4 -->
+  <div class="book-card">
+    <img src="C:\Users\reckl\OneDrive\Desktop\Projects\Wren Rider\Website\images\The Godless War Cover.png" alt="Book 4 Cover" class="book-cover">
+    <h3>Book Four: The Godless War</h3>
+    <p>Placeholder blurb for Book Four in the series.</p>
+    <span class="btn btn-disabled">Not Yet Released</span>
+  </div>
+
+  <!-- Book 5 -->
+  <div class="book-card">
+    <img src="C:\Users\reckl\OneDrive\Desktop\Projects\Wren Rider\Website\images\The Sigil Remade Cover.png" alt="Book 5 Cover" class="book-cover">
+    <h3>Book Five: The Sigil Remade</h3>
+    <p>Placeholder blurb for Book Five in the series.</p>
+    <span class="btn btn-disabled">Not Yet Released</span>
+  </div>
+</div>
+
+<footer>
+  <p>© <span id="year"></span> Wren Rider · <a href="index.html">Home</a></p>
+</footer>
+</div>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
